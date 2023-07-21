@@ -1,24 +1,30 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import emailjs from 'emailjs-com';
+import React from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 
 export const Contact = () => {
-  const { register, handleSubmit, reset, formState: { errors } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
   const onSubmit = (data) => {
     // Agrega tus credenciales de EmailJS
-    const serviceID = 'service_8wy89qe';
-    const templateID = 'Jonathan-contact';
-    const userID = 'JonathanDiaz';
+    const serviceID = "service_8wy89qe";
+    const templateID = "Jonathan-contact";
+    const userID = "JonathanDiaz";
 
-    emailjs.send(serviceID, templateID, data, userID)
+    emailjs
+      .send(serviceID, templateID, data, userID)
       .then(() => {
-        alert('Mensaje enviado correctamente');
+        alert("Mensaje enviado correctamente");
         reset();
       })
       .catch((error) => {
-        alert('Error al enviar el mensaje. Por favor, inténtalo nuevamente.');
-        console.error('Error al enviar el mensaje:', error);
+        alert("Error al enviar el mensaje. Por favor, inténtalo nuevamente.");
+        console.error("Error al enviar el mensaje:", error);
       });
   };
 
@@ -28,17 +34,17 @@ export const Contact = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
           <label>Nombre:</label>
-          <input type="text" {...register('name', { required: true })} />
+          <input type="text" {...register("name", { required: true })} />
           {errors.name && <span>Este campo es obligatorio.</span>}
         </div>
         <div>
           <label>Email:</label>
-          <input type="email" {...register('email', { required: true })} />
+          <input type="email" {...register("email", { required: true })} />
           {errors.email && <span>Este campo es obligatorio.</span>}
         </div>
         <div>
           <label>Mensaje:</label>
-          <textarea {...register('message', { required: true })} />
+          <textarea {...register("message", { required: true })} />
           {errors.message && <span>Este campo es obligatorio.</span>}
         </div>
         <button type="submit">Enviar</button>
