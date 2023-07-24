@@ -1,5 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 import { useForm } from "react-hook-form";
 
 export const Contact = () => {
@@ -18,7 +19,7 @@ export const Contact = () => {
     const publicKey = "QnuzGFLIjKw3nHJPL";
 
     emailjs
-      .send(serviceID, templateID, data, publicKey)
+      .sendForm(serviceID, templateID, form.current, publicKey)
       .then(() => {
         alert("Mensaje enviado correctamente");
         reset();
@@ -30,13 +31,13 @@ export const Contact = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form ref={form} onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label>Nombre:</label>
         <input
           type="text"
-          {...register("name", { required: true })}
           name="user_name"
+          {...register("name", { required: true })}
         />
         {errors.name && <span>Este campo es obligatorio.</span>}
       </div>
@@ -44,8 +45,8 @@ export const Contact = () => {
         <label>Email:</label>
         <input
           type="email"
-          {...register("email", { required: true })}
           name="user_email"
+          {...register("email", { required: true })}
         />
         {errors.email && <span>Este campo es obligatorio.</span>}
       </div>
@@ -53,14 +54,14 @@ export const Contact = () => {
         <label>Teléfono:</label>
         <input
           type="tel"
-          {...register("tel", { required: true })}
           name="user_phone"
+          {...register("tel", { required: true })}
         />
-        {errors.email && <span>Este campo es obligatorio.</span>}
+        {errors.tel && <span>Este campo es obligatorio.</span>}
       </div>
       <div>
         <label>Mensaje:</label>
-        <textarea {...register("message", { required: true })} name="message" />
+        <textarea name="message" {...register("message", { required: true })} />
         {errors.message && <span>Este campo es obligatorio.</span>}
       </div>
       <input type="submit" value="Send" />
