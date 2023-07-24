@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import emailjs from '@emailjs/browser';
 import { useForm } from "react-hook-form";
 
 export const Contact = () => {
@@ -12,42 +11,35 @@ export const Contact = () => {
     formState: { errors },
   } = useForm();
 
+  
   const onSubmit = (data) => {
     // Agrega tus credenciales de EmailJS
     const serviceID = "service_8wy89qe";
     const templateID = "template_bl8eifn";
     const publicKey = "QnuzGFLIjKw3nHJPL";
-
+    
     emailjs
-      .sendForm(serviceID, templateID, form.current, publicKey)
-      .then(() => {
-        alert("Mensaje enviado correctamente");
-        reset();
-      })
-      .catch((error) => {
-        alert("Error al enviar el mensaje. Por favor, inténtalo nuevamente.");
+    .sendForm(serviceID, templateID, form.current, publicKey)
+    .then((result) => {
+      alert("Mensaje enviado correctamente");
+      reset();
+    })
+    .catch((error) => {
+      alert("Error al enviar el mensaje. Por favor, inténtalo nuevamente.");
         console.error("Error al enviar el mensaje:", error);
       });
-  };
-
-  return (
-    <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+    };
+    
+    return (
+      <form ref={form} onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label>Nombre:</label>
-        <input
-          type="text"
-          name="user_name"
-          {...register("name", { required: true })}
-        />
+        <input type="text" name="user_name" {...register("name", { required: true })} />
         {errors.name && <span>Este campo es obligatorio.</span>}
       </div>
       <div>
         <label>Email:</label>
-        <input
-          type="email"
-          name="user_email"
-          {...register("email", { required: true })}
-        />
+        <input type="email" name="user_email" {...register("email", { required: true })} />
         {errors.email && <span>Este campo es obligatorio.</span>}
       </div>
       <div>
@@ -56,7 +48,7 @@ export const Contact = () => {
           type="tel"
           name="user_phone"
           {...register("tel", { required: true })}
-        />
+          />
         {errors.tel && <span>Este campo es obligatorio.</span>}
       </div>
       <div>
@@ -68,3 +60,5 @@ export const Contact = () => {
     </form>
   );
 };
+
+console.log()
