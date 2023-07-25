@@ -72,5 +72,3 @@ export const Contact = () => {
     </form>
   );
 };
-
-console.log();
