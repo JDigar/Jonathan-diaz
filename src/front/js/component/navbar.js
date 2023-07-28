@@ -18,40 +18,36 @@
 //   );
 // };
 
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "../../styles/navbar.css"
+import "../../styles/navbar.css";
 
 export const Navbar = () => {
-	const navRef = useRef();
+  const navRef = useRef();
 
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
 
-	return (
-		<header>
-			<h3>LOGO</h3>
-			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">My work</a>
-				<a href="/#">Blog</a>
-				<a href="/#">About me</a>
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
-		</header>
-	);
-}
-
-// export default Navbar;
+  return (
+    <header>
+      <h2>
+        Jonathan <span> Díaz </span>
+      </h2>
+      <nav ref={navRef}>
+          
+            <a href="/home">Inicio</a>
+            <a href="/proyectos">Portfolio</a>
+            <a href="/contact">Contacto</a>
+            <a href="/#">About me</a>
+          
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
+      </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
+  );
+};
