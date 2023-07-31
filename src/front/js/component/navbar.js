@@ -30,24 +30,27 @@ export const Navbar = () => {
   };
 
   return (
-    <header>
+    <header className="fixed">
       <h2>
         Jonathan <span> Díaz </span>
       </h2>
       <nav ref={navRef}>
-          
-            <a href="/home">Inicio</a>
-            <a href="/proyectos">Portfolio</a>
-            <a href="/contact">Contacto</a>
-            <a href="/#">About me</a>
-          
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-          <FaTimes />
-        </button>
+        <a href="/home">Inicio</a>
+        <a href="/proyectos">Portfolio</a>
+        <a href="/contact">Contacto</a>
+        <a href="/#">About me</a>
+
+        <div className="btn-burger">
+          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <FaTimes />
+          </button>
+        </div>
       </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <FaBars />
-      </button>
+      <div className="btn-burger">
+          <button className="nav-btn" onClick={showNavbar}>
+            <FaBars />
+          </button>
+          </div>
     </header>
   );
 };

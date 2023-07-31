@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
+import "../../styles/contact.css";
 
 export const Contact = () => {
   const form = useRef();
@@ -30,45 +31,60 @@ export const Contact = () => {
   };
 
   return (
+    < div className="bkg">
+    <h2 className="h2-contact">
+      Hola :)
+    </h2>
+      <h3>¡Quiero formar parte de tu proyecto! </h3>
+    <div className="cont">
     <form ref={form} onSubmit={handleSubmit(onSubmit)}>
       <div>
         <label>Nombre:</label>
         <input
+          className="inputs"
           type="text"
           name="name"
           {...register("name", { required: true })}
         />
-        {errors.name && <span>Este campo es obligatorio.</span>}
+        {errors.name && <span className="required">Este campo es obligatorio.</span>}
       </div>
       <div>
         <label>Email:</label>
-        <input
+        <input 
+          className="inputs"
           type="email"
           name="email"
           {...register("email", { required: true })}
         />
-        {errors.email && <span>Este campo es obligatorio.</span>}
+        {errors.email && <span className="required">Este campo es obligatorio.</span>}
       </div>
       <div>
         <label>Teléfono:</label>
-        <input type="tel" name="tel" {...register("tel", { required: true })} />
-        {errors.tel && <span>Este campo es obligatorio.</span>}
+        <input 
+        className="inputs"
+        type="tel" name="tel" {...register("tel", { required: true })} />
+        {errors.tel && <span className="required">Este campo es obligatorio.</span>}
       </div>
       <div>
         <label>Asunto:</label>
         <input
+          className="inputs"
           type="text"
           name="asunto"
           {...register("asunto", { required: true })}
         />
-        {errors.asunto && <span>Este campo es obligatorio.</span>}
+        {errors.asunto && <span className="required">Este campo es obligatorio.</span>}
       </div>
       <div>
         <label>Mensaje:</label>
-        <textarea name="message" {...register("message", { required: true })} />
-        {errors.message && <span>Este campo es obligatorio.</span>}
+        <textarea 
+        className="inputs"
+        name="message" {...register("message", { required: true })} />
+        {errors.message && <span className="required">Este campo es obligatorio.</span>}
       </div>
-      <input type="submit" value="Send" />
+      <input className="success btn" type="submit" value="Send" />
     </form>
+    </div>
+    </div>
   );
 };
