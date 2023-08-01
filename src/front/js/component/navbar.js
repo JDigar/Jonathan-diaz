@@ -20,7 +20,7 @@
 
 import React, { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "../../styles/navbar.css";
+import "../../styles/home.css";
 
 export const Navbar = () => {
   const navRef = useRef();
@@ -37,8 +37,8 @@ export const Navbar = () => {
       <nav ref={navRef}>
         <a href="/home">Inicio</a>
         <a href="/proyectos">Portfolio</a>
-        <a href="/contact">Contacto</a>
         <a href="/#">About me</a>
+        <a className="navbar-contacto" href="/contact">Contacto</a>
 
         <div className="btn-burger">
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>

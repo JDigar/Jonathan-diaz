@@ -1,7 +1,271 @@
-/*
-    home.css: This website contains selectors only used in home.css
+/* GENERALES */
 
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+h2 {
+    
+    color: white;
+    font-weight: 400;
+    font-style: oblique;
+}
+
+h2 span {
+    font-weight: bold;
+   
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--secondaryColor);
+    font-weight: bold;
+}
+
+h4 {
+    color: var(--mainColorLight);
+}
+
+a {
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.bkg {
+    background: rgba(199, 199, 199, 0.71);
+    background: -moz-linear-gradient(left,
+            rgba(199, 199, 199, 0.71) 0%,
+            rgba(255, 255, 255, 0.71) 52%,
+            rgba(199, 199, 199, 0.71) 100%);
+    background: -webkit-gradient(left top,
+            right top,
+            color-stop(0%, rgba(199, 199, 199, 0.71)),
+            color-stop(52%, rgba(255, 255, 255, 0.71)),
+            color-stop(100%, rgba(199, 199, 199, 0.71)));
+    background: -webkit-linear-gradient(left,
+            rgba(199, 199, 199, 0.71) 0%,
+            rgba(255, 255, 255, 0.71) 52%,
+            rgba(199, 199, 199, 0.71) 100%);
+    background: -o-linear-gradient(left,
+            rgba(199, 199, 199, 0.71) 0%,
+            rgba(255, 255, 255, 0.71) 52%,
+            rgba(199, 199, 199, 0.71) 100%);
+    background: -ms-linear-gradient(left,
+            rgba(199, 199, 199, 0.71) 0%,
+            rgba(255, 255, 255, 0.71) 52%,
+            rgba(199, 199, 199, 0.71) 100%);
+    background: linear-gradient(to right,
+            rgba(199, 199, 199, 0.71) 0%,
+            rgba(255, 255, 255, 0.71) 52%,
+            rgba(199, 199, 199, 0.71) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7c7c7', endColorstr='#c7c7c7', GradientType=1);
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0rem;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+/* NAVBAR */
+
+@media only screen and (min-width: 1024px) {
+    .btn-burger {
+        display: none;
+    }
+}
+
+:root {
+    --mainColor: #737270;
+    --mainColorLight: #989692;
+    --secondaryColor: #40e0d0;
+    --textColor: #eee;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--mainColor);
+    padding: 1rem;
+    -webkit-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    
+}
+
+nav a {
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+}
+
+
+header .nav-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+header div,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+button.nav-btn {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+
+    }
+
+
+
+    header nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+    }
+
+    header .responsive_nav {
+        transform: translateY(100vh);
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}
+
+.navbar-contacto {
+    border: 1px solid;
+    border-radius: 10%;
+    padding: 8px;
+    color: var(--secondaryColor);
+}
+
+/* PAGINA CONTACTO */
+
+
+
+
+
+.cont {
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+    max-width: 50%;
+    text-align: center;
+    border-radius: 5%;
+    -webkit-box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
+    -moz-box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
+    box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+}
+
+.inputs {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-bottom:2px solid var(--secondaryColor);
+    background: rgba(51, 170, 51, 0);
+    border-radius: 0%;
+}
+
+.required {
+    color: red;
+    display: flex;
+    font-size: 0.8rem;
+    margin: 0.2rem;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 1rem;
+    border: 2px solid var(--secondaryColor);
+}
+
+.success {
+    background-color: white;
+    border: 2px solid #04aa6d;
+}
+
+.success:hover {
+    background-color: #46a049;
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .cont {
+        max-width: 85%;
+    }
+}
+
+.h2-contact {
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    max-width: 75%;
+    padding-top: 7rem;
+    font-size: 1.1rem;
+}
