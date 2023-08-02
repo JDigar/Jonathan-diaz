@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import "../../styles/navbar.css";
+import "../../styles/home.css";
 
 export const Footer = () => (
-	<footer className="footer mt-auto py-3 text-center bkg">
-		<p>
-			Made with <i className="fa fa-heart text-danger" /> by<a href="https://github.com/JDigar">Jonathan Díaz</a>
-		</p>
-	</footer>
+  <footer className="footer mt-auto py-3 text-center bkg">
+    <p>
+      Made with <i className="fa fa-heart text-danger" /> by{" "}
+      <a href="https://github.com/JDigar"> Jonathan Díaz </a>{" "}
+    </p>{" "}
+  </footer>
 );

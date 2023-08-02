@@ -32,80 +32,90 @@ export const Contact = () => {
 
   return (
     <div className="bkg">
-      <h2 className="h2-contact">¿Tienes un proyecto entre manos?</h2>
-      <h3>¡VAMOS A ELLO! </h3>
+      <div className="container-fluid p-5">
+        <h2 className="h2-contact">¿Tienes un proyecto entre manos?</h2>
+        <h3>¡VAMOS A ELLO! </h3>
+      </div>
       <div className="pt-3 pb-5">
-      <div className="cont">
-        <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-          <div>
-            <h4>Hablemos</h4>
-            <label>Nombre:</label>
-            <input
-              placeholder={'Tu nombre'}
-              className="inputs"
-              type="text"
-              name="name"
-              {...register("name", { required: true })}
+        <div className="row cont align-items-center">
+          <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+            <div>
+                  <h4 className="pb-4 mb-5">Hablemos</h4>
+                  <div className="row mb-5 align-items-center">
+                    <div className="col-md">
+                        <label>Nombre:</label>
+                        <input
+                          placeholder={"Tu nombre"}
+                          className="inputs"
+                          type="text"
+                          name="name"
+                          {...register("name", { required: true })}
+                        />
+                        {errors.name && (
+                          <span className="required">Este campo es obligatorio.</span>
+                        )}
+                    </div>
+                <div className="col-md">
+                  <label>Email:</label>
+                  <input
+                    placeholder={"Tu email"}
+                    className="inputs"
+                    type="email"
+                    name="email"
+                    {...register("email", { required: true })}
+                  />
+                  {errors.email && (
+                    <span className="required">Este campo es obligatorio.</span>
+                  )}
+                </div>
+                <div className="col-md">
+                  <label>Teléfono:</label>
+                  <input
+                    placeholder={"Tu teléfono"}
+                    className="inputs"
+                    type="tel"
+                    name="tel"
+                    {...register("tel", { required: true })}
+                  />
+                  {errors.tel && (
+                    <span className="required">Este campo es obligatorio.</span>
+                  )}
+                </div>
+                </div>
+            </div>
+            <div className="row mb-5 align-items-center">
+            <div className="col-md-4">
+              <label>Asunto:</label>
+              <input
+                placeholder={"Cuéntame un poco"}
+                className="inputs"
+                type="text"
+                name="asunto"
+                {...register("asunto", { required: true })}
               />
-            {errors.name && (
-              <span className="required">Este campo es obligatorio.</span>
+              {errors.asunto && (
+                <span className="required">Este campo es obligatorio.</span>
               )}
-          </div>
-          <div>
-            <label>Email:</label>
-            <input
-              placeholder={'Tu email'}
-              className="inputs"
-              type="email"
-              name="email"
-              {...register("email", { required: true })}
+            </div>
+            <div>
+              <label>Mensaje:</label>
+              <textarea
+                placeholder={"Cuéntame más sobre tu proyecto..."}
+                className="inputs"
+                rows="10"
+                name="message"
+                {...register("message", { required: true })}
               />
-            {errors.email && (
-              <span className="required">Este campo es obligatorio.</span>
+              {errors.message && (
+                <span className="required">Este campo es obligatorio.</span>
               )}
-          </div>
-          <div>
-            <label>Teléfono:</label>
-            <input
-              placeholder={'Tu teléfono'}
-              className="inputs"
-              type="tel"
-              name="tel"
-              {...register("tel", { required: true })}
-              />
-            {errors.tel && (
-              <span className="required">Este campo es obligatorio.</span>
-              )}
-          </div>
-          <div>
-            <label>Asunto:</label>
-            <input
-              placeholder={'Cuéntame un poco'}
-              className="inputs"
-              type="text"
-              name="asunto"
-              {...register("asunto", { required: true })}
-              />
-            {errors.asunto && (
-              <span className="required">Este campo es obligatorio.</span>
-              )}
-          </div>
-          <div>
-            <label>Mensaje:</label>
-            <textarea
-              placeholder={'Cuéntame más sobre tu proyecto...'}
-              className="inputs"
-              name="message"
-              {...register("message", { required: true })}
-              />
-            {errors.message && (
-              <span className="required">Este campo es obligatorio.</span>
-              )}
-          </div>
-          <input className="btn" type="submit" value="Send" />
-        </form>
+            </div>
+            </div>
+            <input className="btn" type="submit" value="Send" />
+          </form>
+        </div>
       </div>
     </div>
-   </div>
+    
   );
 };

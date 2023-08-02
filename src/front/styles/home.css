@@ -1,7 +1,6 @@
 /* GENERALES */
 
 h2 {
-    
     color: white;
     font-weight: 400;
     font-style: oblique;
@@ -9,18 +8,18 @@ h2 {
 
 h2 span {
     font-weight: bold;
-   
 }
 
 h3 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--secondaryColor);
     font-weight: bold;
 }
 
 h4 {
     color: var(--mainColorLight);
+    font-size: 3rem;
 }
 
 a {
@@ -63,7 +62,6 @@ a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7c7c7', endColorstr='#c7c7c7', GradientType=1);
 }
 
-
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {
@@ -84,6 +82,7 @@ a:hover {
 
 :root {
     --mainColor: #737270;
+    --navbarColor: rgba(115, 114, 112, .9);
     --mainColorLight: #989692;
     --secondaryColor: #8ae0db;
     --textColor: #eee;
@@ -101,12 +100,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--mainColor);
+    background-color: var(--navbarColor);
     padding: 1rem;
     -webkit-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
     -moz-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
     box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
-    
 }
 
 nav a {
@@ -119,7 +117,6 @@ nav a:hover {
     color: var(--secondaryColor);
 }
 
-
 header .nav-btn {
     cursor: pointer;
     background: transparent;
@@ -127,7 +124,7 @@ header .nav-btn {
     outline: none;
     color: var(--textColor);
     visibility: hidden;
-    
+
     opacity: 0;
     font-size: 1.8rem;
 }
@@ -155,10 +152,7 @@ button.nav-btn {
         align-items: center;
         justify-content: space-between;
         padding-bottom: 2rem;
-
     }
-
-
 
     header nav {
         position: fixed;
@@ -199,20 +193,18 @@ button.nav-btn {
 
 /* PAGINA CONTACTO */
 
-
-
-
-
 .cont {
+    display: grid;
+    column-gap: 50px;
     align-items: center;
     margin: auto;
     padding: 2rem;
-    max-width: 50%;
+    max-width: 75%;
     text-align: center;
     border-radius: 5%;
-    -webkit-box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
+    /* -webkit-box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
     -moz-box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
-    box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
+    box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1); */
 }
 
 label {
@@ -227,7 +219,7 @@ label {
     width: 100%;
     margin: 0 auto;
     border: none;
-    border-bottom:2px solid var(--secondaryColor);
+    border-bottom: 2px solid var(--secondaryColor);
     background: rgba(51, 170, 51, 0);
     border-radius: 0%;
 }
@@ -257,15 +249,25 @@ label {
 
 @media only screen and (max-width: 1024px) {
     .cont {
-        max-width: 85%;
+        max-width: 100%;
     }
+
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+    
 }
 
 .h2-contact {
     text-align: center;
     margin: 0 auto;
     color: black;
-    max-width: 75%;
     padding-top: 7rem;
-    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
 }
