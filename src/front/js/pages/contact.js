@@ -40,21 +40,22 @@ export const Contact = () => {
         <div className="row cont align-items-center">
           <form ref={form} onSubmit={handleSubmit(onSubmit)}>
             <div>
-                  <h4 className="pb-4 mb-5">Hablemos</h4>
-                  <div className="row mb-5 align-items-center">
-                    <div className="col-md">
-                        <label>Nombre:</label>
-                        <input
-                          placeholder={"Tu nombre"}
-                          className="inputs"
-                          type="text"
-                          name="name"
-                          {...register("name", { required: true })}
-                        />
-                        {errors.name && (
-                          <span className="required">Este campo es obligatorio.</span>
-                        )}
-                    </div>
+              <div className="points"></div>
+              <h4 className="pb-4 mb-5">Hablemos</h4>
+              <div className="row mb-5 align-items-center">
+                <div className="col-md">
+                  <label>Nombre:</label>
+                  <input
+                    placeholder={"Tu nombre"}
+                    className="inputs"
+                    type="text"
+                    name="name"
+                    {...register("name", { required: true })}
+                  />
+                  {errors.name && (
+                    <span className="required">Este campo es obligatorio.</span>
+                  )}
+                </div>
                 <div className="col-md">
                   <label>Email:</label>
                   <input
@@ -81,41 +82,40 @@ export const Contact = () => {
                     <span className="required">Este campo es obligatorio.</span>
                   )}
                 </div>
-                </div>
+              </div>
             </div>
             <div className="row mb-5 align-items-center">
-            <div className="col-md-4">
-              <label>Asunto:</label>
-              <input
-                placeholder={"Cuéntame un poco"}
-                className="inputs"
-                type="text"
-                name="asunto"
-                {...register("asunto", { required: true })}
-              />
-              {errors.asunto && (
-                <span className="required">Este campo es obligatorio.</span>
-              )}
-            </div>
-            <div>
-              <label>Mensaje:</label>
-              <textarea
-                placeholder={"Cuéntame más sobre tu proyecto..."}
-                className="inputs"
-                rows="10"
-                name="message"
-                {...register("message", { required: true })}
-              />
-              {errors.message && (
-                <span className="required">Este campo es obligatorio.</span>
-              )}
-            </div>
+              <div className="col-md-4">
+                <label>Asunto:</label>
+                <input
+                  placeholder={"Cuéntame un poco"}
+                  className="inputs"
+                  type="text"
+                  name="asunto"
+                  {...register("asunto", { required: true })}
+                />
+                {errors.asunto && (
+                  <span className="required">Este campo es obligatorio.</span>
+                )}
+              </div>
+              <div>
+                <label>Mensaje:</label>
+                <textarea
+                  placeholder={"Cuéntame más sobre tu proyecto..."}
+                  className="inputs"
+                  rows="10"
+                  name="message"
+                  {...register("message", { required: true })}
+                />
+                {errors.message && (
+                  <span className="required">Este campo es obligatorio.</span>
+                )}
+              </div>
             </div>
             <input className="btn" type="submit" value="Send" />
           </form>
         </div>
       </div>
     </div>
-    
   );
 };

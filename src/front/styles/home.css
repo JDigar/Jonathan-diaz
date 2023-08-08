@@ -13,7 +13,7 @@ h2 span {
 h3 {
     text-align: center;
     font-size: 4rem;
-    color: var(--secondaryColor);
+    color: var(--colorThree);
     font-weight: bold;
 }
 
@@ -81,11 +81,12 @@ a:hover {
 }
 
 :root {
-    --mainColor: #737270;
-    --navbarColor: rgba(115, 114, 112, .9);
-    --mainColorLight: #989692;
-    --secondaryColor: #8ae0db;
+    --mainColor: #252b48;
+    --navbarColor: rgba(68, 80, 105, 0.96);
+    --mainColorLight: #445069;
+    --secondaryColor: #f7e987;
     --textColor: #eee;
+    --colorThree: #252b48;
 }
 
 .fixed {
@@ -165,7 +166,7 @@ button.nav-btn {
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: var(--mainColor);
+        background-color: var(--navbarColor);
         transition: 1s;
     }
 
@@ -225,9 +226,9 @@ label {
 }
 
 .required {
-    color: red;
+    color: var(--mainColor);
     display: flex;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 0.2rem;
 }
 
@@ -235,6 +236,12 @@ label {
     width: 100%;
     margin-top: 1rem;
     border: 2px solid var(--secondaryColor);
+}
+
+.btn:hover {
+    width: 100%;
+    margin-top: 1rem;
+    border: 2px solid var(--mainColorLight);
 }
 
 .success {
@@ -252,7 +259,6 @@ label {
         max-width: 100%;
     }
 
-
     h3 {
         font-size: 2.5rem;
     }
@@ -260,14 +266,22 @@ label {
     h4 {
         font-size: 2rem;
     }
-    
 }
 
 .h2-contact {
     text-align: center;
     margin: 0 auto;
-    color: black;
+    color: var(--mainColorLight);
     padding-top: 7rem;
     padding-bottom: 1rem;
     font-size: 1.5rem;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    height: 0.5rem;
+    margin-bottom: 4rem;
 }
