@@ -15,9 +15,9 @@ export const Navbar = () => {
         Jonathan <span> Díaz </span>
       </h2>
       <nav ref={navRef}>
-        <a href="/home">Inicio</a>
+        <a href="/inicio">Inicio</a>
         <a href="/proyectos">Portfolio</a>
-        <a href="/#">About me</a>
+        <a href="/about-me">About me</a>
         <a className="navbar-contacto" href="/contact">
           Contacto
         </a>
