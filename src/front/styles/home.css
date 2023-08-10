@@ -297,7 +297,8 @@ label {
 /*página Inicio*/
 
 .img-inicio {
-    background-image: url(../img/img-fondo1.jpg);
+    background-image: url('../img/montañas.jpg');
+    border: 2px solid red;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
