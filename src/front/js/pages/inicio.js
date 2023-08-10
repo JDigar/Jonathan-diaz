@@ -4,9 +4,11 @@ import "../../styles/home.css";
 export const Inicio = () => {
   return (
     <section id="home">
-  
-        <div className="img-inicio"></div>
-     
+      <div className="img-inicio">
+        <h1 className="h1-inicio"> HOLA</h1>
+        <p className="soy"> SOY DESARROLADOR WEB</p>
+      </div>
+
       <div className="p-4">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et
