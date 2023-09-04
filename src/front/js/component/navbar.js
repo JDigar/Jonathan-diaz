@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <header className="fixed">
       <h2>
-        Jonathan <span> Díaz </span>
+        <a href="/inicio"> Jonathan <span> Díaz </span> </a>
       </h2>
       <nav ref={navRef}>
         <a href="/inicio">Inicio</a>
