@@ -2,10 +2,10 @@ import React from "react";
 
 export const AboutMe = () => {
   return (
-    <section id="home">
-      {" "}
+    <section id="home" className="bkg">
+      <div className="p-5"></div>{" "}
       {/* Aquí puedes agregar la información de tus proyectos */}{" "}
-      <h1>
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed ac libero
         dapibus, consequat nisl eget, viverra urna.Nullam et pulvinar
         sapien.Phasellus consectetur hendrerit neque a tempus.Vestibulum sit
@@ -55,7 +55,7 @@ export const AboutMe = () => {
         varius, elit augue vulputate quam, sit amet venenatis diam nisl quis
         neque.Maecenas eu dui ut felis suscipit porta viverra non dolor.Aenean
         ultricies{" "}
-      </h1>{" "}
+      </p>{" "}
     </section>
   );
 };

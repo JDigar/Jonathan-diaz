@@ -33,33 +33,7 @@ a:hover {
 }
 
 .bkg {
-    background: rgba(199, 199, 199, 0.71);
-    background: -moz-linear-gradient(left,
-            rgba(199, 199, 199, 0.71) 0%,
-            rgba(255, 255, 255, 0.71) 52%,
-            rgba(199, 199, 199, 0.71) 100%);
-    background: -webkit-gradient(left top,
-            right top,
-            color-stop(0%, rgba(199, 199, 199, 0.71)),
-            color-stop(52%, rgba(255, 255, 255, 0.71)),
-            color-stop(100%, rgba(199, 199, 199, 0.71)));
-    background: -webkit-linear-gradient(left,
-            rgba(199, 199, 199, 0.71) 0%,
-            rgba(255, 255, 255, 0.71) 52%,
-            rgba(199, 199, 199, 0.71) 100%);
-    background: -o-linear-gradient(left,
-            rgba(199, 199, 199, 0.71) 0%,
-            rgba(255, 255, 255, 0.71) 52%,
-            rgba(199, 199, 199, 0.71) 100%);
-    background: -ms-linear-gradient(left,
-            rgba(199, 199, 199, 0.71) 0%,
-            rgba(255, 255, 255, 0.71) 52%,
-            rgba(199, 199, 199, 0.71) 100%);
-    background: linear-gradient(to right,
-            rgba(199, 199, 199, 0.71) 0%,
-            rgba(255, 255, 255, 0.71) 52%,
-            rgba(199, 199, 199, 0.71) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c7c7c7', endColorstr='#c7c7c7', GradientType=1);
+    background-color: #eeeeee;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
@@ -341,4 +315,14 @@ h1 {
     justify-content: center;
     font-size: 2rem;
     color: var(--textColor);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--mainColorLight);
+}
+
+.footer p {
+    color: white;
 }

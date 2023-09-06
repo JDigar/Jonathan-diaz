@@ -12,10 +12,13 @@ export const Navbar = () => {
   return (
     <header className="fixed">
       <h2>
-        <a href="/inicio"> Jonathan <span> Díaz </span> </a>
+        <a href="/">
+          {" "}
+          Jonathan <span> Díaz </span>{" "}
+        </a>
       </h2>
       <nav ref={navRef}>
-        <a href="/inicio">Inicio</a>
+        <a href="/">Inicio</a>
         <a href="/proyectos">Portfolio</a>
         <a href="/about-me">About me</a>
         <a className="navbar-contacto" href="/contact">
