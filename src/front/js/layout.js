@@ -23,7 +23,7 @@ const Layout = () => {
         <ScrollToTop>
           <Navbar />
           <Routes>
-            <Route element={<Inicio />} path="/inicio" />
+            <Route element={<Inicio />} path="/" />
             <Route element={<AboutMe />} path="/about-me" />
             <Route element={<Contact />} path="/contact" />
             <Route element={<Proyectos />} path="/proyectos" />
