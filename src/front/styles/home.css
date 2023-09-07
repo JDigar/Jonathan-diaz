@@ -32,6 +32,16 @@ a:hover {
     color: var(--secondaryColor);
 }
 
+.anavbar:hover {
+    transition: all 0.2s ease-out;
+    font-size: 1.2rem;
+}
+
+.logoNavbar:hover {
+    transition: all 0.2s ease-out;
+    font-size: 2.2rem;
+}
+
 .bkg {
     background-color: #eeeeee;
 }
@@ -224,6 +234,7 @@ label {
     transition: all 0.5s ease-out;
     transition-timing-function: linear;
     color: var(--secondaryColor);
+    font-size: 1.2rem;
 }
 
 .success {
