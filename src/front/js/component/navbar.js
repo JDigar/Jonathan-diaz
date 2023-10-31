@@ -14,13 +14,19 @@ export const Navbar = () => {
       <h2>
         <a className="logoNavbar" href="/">
           {" "}
-          Jonathan <span> Díaz </span>{" "}
+          LIVE GIG <span> MUSIC </span>{" "}
         </a>
       </h2>
       <nav ref={navRef}>
-        <a className="anavbar" href="/">Inicio</a>
-        <a className="anavbar" href="/proyectos">Portfolio</a>
-        <a className="anavbar"href="/about-me">About me</a>
+        <a className="anavbar" href="/">
+          Inicio
+        </a>
+        <a className="anavbar" href="/proyectos">
+          Portfolio
+        </a>
+        <a className="anavbar" href="/about-me">
+          About me
+        </a>
         <a className=" anavbar navbar-contacto" href="/contact">
           Contacto
         </a>
