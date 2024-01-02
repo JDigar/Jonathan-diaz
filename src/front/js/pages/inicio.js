@@ -10,8 +10,17 @@ export const Inicio = () => {
           <h1 className="h1-inicio"> LIVE GIG MUSIC </h1>
 
           <h2>GRUPOS Y ARTISTAS PARA BODAS Y EVENTOS</h2>
-          <div>
-            <ReactPlayer url='https://www.youtube.com/watch?v=ETuxPF8HKyQ'/>
+          <div className="">
+            <div className="center">
+            <ReactPlayer url="https://www.youtube.com/watch?v=WjBzSSF0j48"
+            playsinline
+            width='100%'
+            height='1000px'
+            loop
+            muted
+            playing='true'
+             />
+             </div>
           </div>
         </div>
       </div>
