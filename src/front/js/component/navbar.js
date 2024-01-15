@@ -22,10 +22,10 @@ export const Navbar = () => {
           Inicio
         </a>
         <a className="anavbar" href="/proyectos">
-          Portfolio
+          Grupos
         </a>
         <a className="anavbar" href="/about-me">
-          About me
+          DJ's
         </a>
         <a className=" anavbar navbar-contacto" href="/contact">
           Contacto

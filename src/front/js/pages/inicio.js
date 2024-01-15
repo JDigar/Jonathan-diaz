@@ -1,26 +1,19 @@
 import React from "react";
 import "../../styles/home.css";
-import ReactPlayer from "react-player";
+import { BanerInicio } from "../component/banner.js";
 
 export const Inicio = () => {
   return (
     <section id="home">
       <div className="">
         <div>
-          <h1 className="h1-inicio"> LIVE GIG MUSIC </h1>
-
-          <h2>GRUPOS Y ARTISTAS PARA BODAS Y EVENTOS</h2>
           <div className="">
             <div className="center">
-            <ReactPlayer url="https://www.youtube.com/watch?v=WjBzSSF0j48"
-            playsinline
-            width='100%'
-            height='1000px'
-            loop
-            muted
-            playing='true'
-             />
-             </div>
+              <h1 className="h1-inicio"> LIVE GIG MUSIC </h1>
+
+              <h2>GRUPOS Y ARTISTAS PARA BODAS Y EVENTOS</h2>
+            </div>
+            <BanerInicio />
           </div>
         </div>
       </div>

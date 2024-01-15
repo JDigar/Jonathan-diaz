@@ -74,6 +74,7 @@
 	},
 	"dependencies": {
 		"@emailjs/browser": "^3.11.0",
+		"bootstrap": "^5.3.2",
 		"emailjs-com": "^3.2.0",
 		"jshint": "^2.13.6",
 		"prop-types": "^15.6.1",
