@@ -19,7 +19,7 @@ export const Inicio = () => {
       </div>
 
       <div className="p-4 trabajemos">
-        <h1 className="p-4">¡TRABAJEMOS JUNTOS!</h1>
+        <a className="p-4 a-trabajemos">¡TRABAJEMOS JUNTOS!</a>
         <div>
           <h4 className="p-4">
             Estamos deseando poner la banda sonora de vuestro día

@@ -294,6 +294,12 @@ label {
   height: 60rem;
 }
 
+.a-trabajemos {
+  font-size: 3rem;
+  color: var(--colorThree);
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1024px) {
   .img-inicio {
     background-image: url("https://imgur.com/IzQkX7a.jpeg");
