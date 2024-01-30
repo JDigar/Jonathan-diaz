@@ -1,20 +1,21 @@
 import React from "react";
 import "../../styles/home.css";
 import { BanerInicio } from "../component/banner.js";
+import { Welcome } from "../component/welcome.js";
+import { Space } from "../component/space.js";
 
 export const Inicio = () => {
   return (
     <section id="home">
       <div className="">
         <div>
-          <div className="">
-            <div className="center">
-              <h1 className="h1-inicio"> LIVE GIG MUSIC </h1>
-
-              <h2>GRUPOS Y ARTISTAS PARA BODAS Y EVENTOS</h2>
-            </div>
+            <Welcome />
+        </div>
+        <div>
+            <Space />
+        </div>
+        <div>
             <BanerInicio />
-          </div>
         </div>
       </div>
 

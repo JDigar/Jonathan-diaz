@@ -1,0 +1,10 @@
+.space {
+    background-color: var(--secondaryColor);
+    height: 1rem;
+    border-radius: 1rem;
+    max-width: 60%;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+}

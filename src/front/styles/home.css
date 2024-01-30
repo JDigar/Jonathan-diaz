@@ -300,6 +300,14 @@ label {
   font-weight: bold;
 }
 
+.space {
+  background-color: var(--navbarColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+}
+
 @media only screen and (max-width: 1024px) {
   .img-inicio {
     background-image: url("https://imgur.com/IzQkX7a.jpeg");
@@ -312,7 +320,6 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10rem !important;
   }
 
   .soy {
@@ -327,7 +334,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10rem;
   color: var(--secondaryColor);
 }
 

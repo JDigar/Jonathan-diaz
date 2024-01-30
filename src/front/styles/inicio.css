@@ -1,0 +1,31 @@
+:root {
+    --mainColor: #252b48;
+    --navbarColor: rgba(68, 80, 105, 0.96);
+    --color3: rgba(68, 80, 105, 0.6);
+    --mainColorLight: #445069;
+    --secondaryColor: #f7e987;
+    --textColor: #eee;
+    --colorThree: #252b48;
+}
+
+.box {
+    background-image: url("https://images.pexels.com/photos/6270269/pexels-photo-6270269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    max-width: 90%;
+    margin: auto;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    margin-top: 10rem;
+    border-radius: 1rem;
+    opacity: 80%;
+    padding: 8rem;
+}
+
+.h1-welcome {
+    color: var(--mainColor);
+}
+
+@media only screen and (max-width: 1024px) {}
