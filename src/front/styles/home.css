@@ -1,362 +1,375 @@
 /* GENERALES */
 
 h2 {
-  color: var(--mainColorLight);
-  text-align: center;
-  font-weight: 400;
-  font-style: oblique;
+    color: var(--mainColorLight);
+    text-align: center;
+    font-weight: 400;
+    font-style: oblique;
 }
 
 h2 span {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 h3 {
-  text-align: center;
-  font-size: 4rem;
-  color: var(--colorThree);
-  font-weight: bold;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--colorThree);
+    font-weight: bold;
 }
 
 h4 {
-  color: var(--mainColorLight);
-  font-size: 3rem;
+    color: var(--mainColorLight);
+    font-size: 3rem;
 }
 
 a {
-  text-decoration: none;
-  padding: 1rem;
-  color: white;
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
 }
 
 a:hover {
-  color: var(--secondaryColor);
+    color: var(--secondaryColor);
 }
 
 .anavbar:hover {
-  transition: all 0.2s ease-out;
-  font-size: 1.2rem;
+    transition: all 0.2s ease-out;
+    font-size: 1.2rem;
 }
 
 .logoNavbar:hover {
-  transition: all 0.2s ease-out;
-  font-size: 2.2rem;
+    transition: all 0.2s ease-out;
+    font-size: 2.2rem;
 }
 
 .bkg {
-  background-color: #eeeeee;
+    background-color: #eeeeee;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 0rem;
-  box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0rem;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
 }
 
 /* NAVBAR */
 
 @media only screen and (min-width: 1024px) {
-  .btn-burger {
-    display: none;
-  }
+    .btn-burger {
+        display: none;
+    }
 }
 
 :root {
-  --mainColor: #252b48;
-  --navbarColor: rgba(68, 80, 105, 0.96);
-  --color3: rgba(68, 80, 105, 0.6);
-  --mainColorLight: #445069;
-  --secondaryColor: #f7e987;
-  --textColor: #eee;
-  --colorThree: #252b48;
+    --mainColor: #252b48;
+    --navbarColor: rgba(68, 80, 105, 0.96);
+    --color3: rgba(68, 80, 105, 0.6);
+    --mainColorLight: #445069;
+    --secondaryColor: #f7e987;
+    --textColor: #eee;
+    --colorThree: #252b48;
 }
 
 .fixed {
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  width: 100%;
-  height: 5rem;
-  padding: 2rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--navbarColor);
-  padding: 1rem;
-  -webkit-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
-  -moz-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
-  box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbarColor);
+    padding: 1rem;
+    -webkit-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 10px 5px -3px rgba(0, 0, 0, 0.37);
 }
 
 nav a {
-  margin: 0 1rem;
-  color: var(--textColor);
-  text-decoration: none;
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
 }
 
 nav a:hover {
-  color: var(--secondaryColor);
+    color: var(--secondaryColor);
 }
 
 header .nav-btn {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--textColor);
-  visibility: hidden;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
 
-  opacity: 0;
-  font-size: 1.8rem;
+    opacity: 0;
+    font-size: 1.8rem;
 }
 
 header div,
 nav {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 button.nav-btn {
-  display: flex;
-  align-items: center;
-  padding-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.2rem;
 }
 
 @media only screen and (max-width: 1024px) {
-  header .nav-btn {
-    visibility: visible;
-    opacity: 1;
-  }
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-  }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
 
-  header nav {
-    position: fixed;
-    top: -100vh;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    background-color: var(--navbarColor);
-    transition: 1s;
-  }
+    header nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--navbarColor);
+        transition: 1s;
+    }
 
-  header .responsive_nav {
-    transform: translateY(100vh);
-  }
+    header .responsive_nav {
+        transform: translateY(100vh);
+    }
 
-  nav .nav-close-btn {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-  }
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
 
-  nav a {
-    font-size: 1.5rem;
-  }
+    nav a {
+        font-size: 1.5rem;
+    }
 }
 
 .navbar-contacto {
-  border: 1px solid;
-  border-radius: 10%;
-  padding: 8px;
-  color: var(--secondaryColor);
+    border: 1px solid;
+    border-radius: 10%;
+    padding: 8px;
+    color: var(--secondaryColor);
+}
+
+.contacto-inicio {
+    border: 1px solid;
+    border-radius: 30%;
+    padding: 8px;
+    color: var(--mainColor);
+}
+
+.contacto-inicio:hover {
+    border: 1px solid;
+    border-radius: 10%;
+    padding: 8px;
+    background-color: var(--mainColorLight);
+    color: var(--secondaryColor);
 }
 
 /* PAGINA CONTACTO */
 
 .cont {
-  display: grid;
-  column-gap: 50px;
-  align-items: center;
-  margin: auto;
-  padding: 2rem;
-  max-width: 75%;
-  text-align: center;
-  border-radius: 5%;
-  /* -webkit-box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
+    display: grid;
+    column-gap: 50px;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+    max-width: 75%;
+    text-align: center;
+    border-radius: 5%;
+    /* -webkit-box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
     -moz-box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1);
     box-shadow: 0px 0px 17px 3px rgba(128, 128, 128, 1); */
 }
 
 label {
-  display: block;
-  text-align: left;
-  margin: 0 auto;
-  margin-bottom: 0.2rem;
-  margin-top: 1rem;
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
 }
 
 .inputs {
-  width: 100%;
-  margin: 0 auto;
-  border: none;
-  border-bottom: 2px solid var(--secondaryColor);
-  background: rgba(51, 170, 51, 0);
-  border-radius: 0%;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 2px solid var(--secondaryColor);
+    background: rgba(51, 170, 51, 0);
+    border-radius: 0%;
 }
 
 .required {
-  color: var(--mainColor);
-  display: flex;
-  font-size: 1rem;
-  margin: 0.2rem;
+    color: var(--mainColor);
+    display: flex;
+    font-size: 1rem;
+    margin: 0.2rem;
 }
 
 .btn {
-  width: 100%;
-  margin-top: 1rem;
-  border: 2px solid var(--secondaryColor);
+    width: 100%;
+    margin-top: 1rem;
+    border: 2px solid var(--secondaryColor);
 }
 
 .btn:hover {
-  width: 100%;
-  margin-top: 1rem;
-  border: 2px solid var(--mainColorLight);
-  background: linear-gradient(
-    to right,
-    var(--secondaryColor) 50%,
-    var(--mainColorLight) 50%
-  );
-  background-position: right bottom;
-  background-size: 200% 100%;
-  transition: all 0.5s ease-out;
-  transition-timing-function: linear;
-  color: var(--secondaryColor);
-  font-size: 1.2rem;
+    width: 100%;
+    margin-top: 1rem;
+    border: 2px solid var(--mainColorLight);
+    background: linear-gradient(to right,
+            var(--secondaryColor) 50%,
+            var(--mainColorLight) 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all 0.5s ease-out;
+    transition-timing-function: linear;
+    color: var(--secondaryColor);
+    font-size: 1.2rem;
 }
 
 .success {
-  background-color: white;
-  border: 2px solid #04aa6d;
+    background-color: white;
+    border: 2px solid #04aa6d;
 }
 
 .success:hover {
-  background-color: #46a049;
-  color: white;
+    background-color: #46a049;
+    color: white;
 }
 
 @media only screen and (max-width: 1024px) {
-  .cont {
-    max-width: 100%;
-  }
+    .cont {
+        max-width: 100%;
+    }
 
-  h3 {
-    font-size: 2.5rem;
-  }
+    h3 {
+        font-size: 2.5rem;
+    }
 
-  h4 {
-    font-size: 2rem;
-  }
+    h4 {
+        font-size: 2rem;
+    }
 }
 
 .h2-contact {
-  text-align: center;
-  margin: 0 auto;
-  color: var(--mainColorLight);
-  padding-top: 7rem;
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--mainColorLight);
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .points {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secondaryColor);
-  height: 0.5rem;
-  margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    height: 0.5rem;
+    margin-bottom: 4rem;
 }
 
 /*página Inicio*/
 
 .img-inicio {
-  background-image: url("https://i.imgur.com/NsRmcYH.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 60rem;
+    background-image: url("https://i.imgur.com/NsRmcYH.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60rem;
 }
 
 .a-trabajemos {
-  font-size: 3rem;
-  color: var(--colorThree);
-  font-weight: bold;
+    font-size: 3rem;
+    color: var(--colorThree);
+    font-weight: bold;
 }
 
 .space {
-  background-color: var(--navbarColor);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 8rem;
-}
-
-@media only screen and (max-width: 1024px) {
-  .img-inicio {
-    background-image: url("https://imgur.com/IzQkX7a.jpeg");
-    background-size: cover;
-    /* padding-bottom: 9.5rem; */
-    height: 20em;
-  }
-
-  h1 {
+    background-color: var(--navbarColor);
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    height: 8rem;
+}
 
-  .soy {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 1.5rem !important;
-  }
+@media only screen and (max-width: 1024px) {
+    .img-inicio {
+        background-image: url("https://imgur.com/IzQkX7a.jpeg");
+        background-size: cover;
+        /* padding-bottom: 9.5rem; */
+        height: 20em;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .soy {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 1.5rem !important;
+    }
 }
 
 h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondaryColor);
 }
 
 .soy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--textColor);
 }
 
 .trabajemos {
-  background-color: var(--textColor);
-  margin: 5rem;
-  text-align: center;
+    background-color: var(--textColor);
+    margin: 5rem;
+    text-align: center;
 }
 
 /* FOOTER */
 
 .footer {
-  background-color: var(--mainColorLight);
+    background-color: var(--mainColorLight);
 }
 
 .footer p {
-  color: white;
+    color: white;
 }
