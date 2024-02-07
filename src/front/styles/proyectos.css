@@ -1,0 +1,19 @@
+:root {
+  --mainColor: #252b48;
+  --navbarColor: rgba(68, 80, 105, 0.96);
+  --color3: rgba(68, 80, 105, 0.6);
+  --mainColorLight: #445069;
+  --secondaryColor: #f7e987;
+  --textColor: #eee;
+  --colorThree: #252b48;
+}
+
+.text-h1 {
+  color: var(--mainColor);
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+
+.btn-primary {
+  background-color: var(--mainColorLight);
+}
